@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>prebp</title>
+    <title>pre-bp</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <style>
       body {background-color: #F5F5F5;    color: #212121;}
@@ -11,19 +11,6 @@
       a:hover                           { color: #64B5F6; }
       a:active  { transition: color .15s; color: #2196F3; }
     </style>
-
-    <!-- github single page app hack -->
-    <!-- http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
-    <script>
-      (function(){
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
-    </script>
-
   </head>
   <body>
     <div id="app"></div>
